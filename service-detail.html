@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="robots" content="">
+    <meta name="description" content="">
+
+    <!-- FAVICONS ICON -->
+    <!-- <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-v2.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32-v2.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+
+    <!-- PAGE TITLE HERE -->
+    <title>MEAD</title>
+
+    <!-- MOBILE SPECIFIC -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css"><!-- BOOTSTRAP STYLE SHEET -->
+    <link rel="stylesheet" href="css/font-awesome.min.css"><!-- FONTAWESOME STYLE SHEET -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css"><!-- OWL CAROUSEL STYLE SHEET -->
+    <link rel="stylesheet" href="css/magnific-popup.min.css"><!-- MAGNIFIC POPUP STYLE SHEET -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"><!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/style.css"><!-- MAIN STYLE SHEET -->
+    <link rel="stylesheet" href="css/bootstrap-icons.css"><!-- BOOTSTRAP ICON STYLE SHEET -->
+    <link rel="stylesheet" href="css/lc_lightbox.css"><!-- Lc light box popup -->
+    <link rel="stylesheet" href="css/bootstrap-slider.min.css"><!-- Price Range Slider -->
+<style>
+    .loading-area{
+    position: fixed;
+    inset: 0;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+/* remove absolute positioning */
+.loading-pic{
+    position: relative;
+}
+
+/* Spinner */
+.loader{
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #e10600;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+    0%{ transform: rotate(0deg); }
+    100%{ transform: rotate(360deg); }
+}
+</style>
+</head>
+
+<body>
+
+    <!-- LOADING AREA START ===== -->
+    <div class="loading-area">
+        <div class="loading-box"></div>
+        <div class="loading-pic">
+            <div class="loader"></div>
+        </div>
+    </div>
+    <!-- LOADING AREA  END ====== -->
+
+    <!-- Curser Pointer -->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <div class="page-wraper">
+
+        <!-- HEADER START -->
+        <header class="sticky-header site-header header-style-2 mobile-sider-drawer-menu">
+            <div class="main-bar-wraper  navbar-expand-lg">
+                <div class="main-bar">
+
+                    <div class="container-fluid clearfix">
+
+                        <div class="logo-header">
+                            <div class="logo-header-inner logo-header-one">
+                                <a href="index.html">
+                                    <img src="images/red-logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <ul class="company-site-info">
+                            <li><i class="bi bi-phone"></i><a href="tel:+97145704989" style="cursor: pointer;">+971 4
+                                    570 4989</a></li>
+                            <li><i class="bi bi-envelope"></i><a href="mailto:info@meadinteriors.com"
+                                    style="cursor: pointer;">info@meadinteriors.com</a></li>
+                        </ul>
+
+
+                        <!-- NAV Toggle Button -->
+                        <button id="mobile-side-drawer" data-target=".header-nav" data-toggle="collapse" type="button"
+                            class="navbar-toggler collapsed">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar icon-bar-first"></span>
+                            <span class="icon-bar icon-bar-two"></span>
+                            <span class="icon-bar icon-bar-three"></span>
+                        </button>
+
+                        <!-- MAIN Vav -->
+                        <div class="nav-animation header-nav navbar-collapse collapse d-flex justify-content-end">
+
+
+                            <ul class=" nav navbar-nav">
+                                <li><a href="index.html">Home</a></li>
+                              
+                                        <!-- <li class="menu-arrow"><a href="services.html">Services</a></li> -->
+
+                                   <!-- <li class="has-child"><a href="javascript:;">Interiors</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="service-detail.html">Interior Design</a></li>
+                                        <li><a href="service-detail.html">Smart Space</a></li>
+                                      <li><a href="service-detail.html">Furnture</a></li>
+                                      <li><a href="service-detail.html">Joinery</a></li>
+                                    </ul>                                                                 
+                                </li>
+                                   <li class="has-child"><a href="javascript:;">Construction</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="service-detail.html">Engineering, Procurement & Construction (EPC)</a></li>
+                                        <li><a href="service-detail.html">Pre-Engineered Building (PEB) Systems</a></li>
+                                        <li><a href="service-detail.html">Civil & Structural Works</a></li>
+                                        <li><a href="service-detail.html">Architecture & Design</a></li>
+                                        <li><a href="service-detail.html">Interior Design & Fit-Out</a></li>
+                                        <li><a href="service-detail.html">Maintenance & Facility Management</a></li>
+                                    </ul>                                                                 
+                                </li> -->
+
+
+                                 <li class="has-child">
+                                    <a href="javascript:;">Services</a>
+                                    <ul class="sub-menu">
+
+                                        <li><a href="javascript:;">Interiors</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="service-detail.html">Residential Interior Design</a></li>
+                                                <li><a href="service-detail.html">Commercial Interior Fit-Outs</a></li>
+                                                  <li><a href="service-detail.html">Modular Kitchen Solutions</a></li>
+                                                    <li><a href="service-detail.html">Bedroom & Wardrobe Design</a></li>
+                                                      <li><a href="service-detailhtml">False Ceiling & Lighting Design</a></li>
+                                                        <li><a href="service-detail.html">Renovation & Remodeling Services</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li><a href="javascript:;">Constructions</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="service-detail.html">Residential Construction</a></li>
+                                                <li><a href="service-detail.html">Commercial Construction</a></li>
+                                                   <li><a href="service-detail.html">Turnkey Construction Projects</a></li>
+                                                      <li><a href="service-detail.html">Structural & Civil Works</a></li>
+                                                         <li><a href="service-detail.html">Renovation & Extension Projects</a></li>
+                                                            <li><a href="service-detail.html">Project Management & Consulting</a></li>
+
+                                            </ul>
+                                        </li>
+
+                                                                                        
+                                    </ul>                                
+                                </li>
+
+
+                                <li><a href="project.html">Portfolio</a></li>
+                                <li><a href="career.html">Careers</a></li>
+                                  <li><a href="about.html">About</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+
+                                </ul>
+                           
+                       </div>
+
+
+
+                                <!-- SITE Search -->
+                                <div id="search">
+                                    <span class="close-btn">X</span>
+                                    <form role="search" id="searchform" action="/search" method="get" class="radius-xl">
+                                        <div class="input-group">
+                                            <input class="form-control" value="" name="q" type="search"
+                                                placeholder="Search...">
+                                            <span class="input-group-append">
+                                                <button type="button" class="search-btn">
+                                                    <i class="bi bi-search"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Sidebar popup Item -->
+                <!-- <div class="xs-sidebar-group info-group">
+                <div class="xs-overlay xs-bg-black"></div>
+                <div class="xs-sidebar-widget">
+
+                    <div class="sidebar-widget-container">
+                        <div class="widget-heading">
+                            <a href="#" class="close-side-widget">
+                                <i class="bi bi-x-square-fill"></i>
+                            </a>
+                        </div>
+
+                        <div class="sidebar-textwidget"> -->
+
+                <!-- Sidebar Info Content -->
+                <!-- <div class="sidebar-info-contents">
+                                <div class="content-inner">
+                                    <div class="content-box">
+
+                                        <div class="cart-dropdown-item-wraper">
+                                            <div class="nav-cart-content">
+                                                
+                                                <div class="nav-cart-items">
+                                                    <div class="nav-cart-item">
+                                                        <div class="nav-cart-item-image">
+                                                            <a href="shop-detail.html"><img src="images/cart/pic-1.jpg" alt="p-1"></a>
+                                                        </div>
+                                                        <div class="nav-cart-item-desc">
+                                                            <span class="nav-cart-item-price"><strong>2</strong> x $ 19.99</span>
+                                                            <a href="shop-detail.html">Potted plants with shelf and chair</a>
+                                                            <a href="shop-detail.html" class="nav-cart-item-quantity radius-sm">x</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nav-cart-item">
+                                                        <div class="nav-cart-item-image">
+                                                            <a href="shop-detail.html"><img src="images/cart/pic-2.jpg" alt="p-2"></a>
+                                                        </div>
+                                                        <div class="nav-cart-item-desc">
+                                                            <span class="nav-cart-item-price"><strong>1</strong> x $ 24.99</span>
+                                                            <a href="shop-detail.html">Elegant plants decoration vase</a>
+                                                            <a href="shop-detail.html" class="nav-cart-item-quantity radius-sm">x</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nav-cart-item">
+                                                        <div class="nav-cart-item-image">
+                                                            <a href="shop-detail.html"><img src="images/cart/pic-3.jpg" alt="p-1"></a>
+                                                        </div>
+                                                        <div class="nav-cart-item-desc">
+                                                            <span class="nav-cart-item-price"><strong>2</strong> x $ 19.99</span>
+                                                            <a href="shop-detail.html">Round plants decoration vase</a>
+                                                            <a href="shop-detail.html" class="nav-cart-item-quantity radius-sm">x</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nav-cart-item">
+                                                        <div class="nav-cart-item-image">
+                                                            <a href="shop-detail.html"><img src="images/cart/pic-4.jpg" alt="p-2"></a>
+                                                        </div>
+                                                        <div class="nav-cart-item-desc">
+                                                            <span class="nav-cart-item-price"><strong>1</strong> x $ 24.99</span>
+                                                            <a href="shop-detail.html">Plant pot on stairs interior design</a>
+                                                            <a href="shop-detail.html" class="nav-cart-item-quantity radius-sm">x</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="nav-cart-title p-tb10 p-lr15 d-flex">
+                                                    <h4  class="m-a0">Subtotal:</h4>
+                                                    <h5 class="m-a0">$67.97</h5>
+                                                </div>
+
+                                                <div class="nav-cart-action d-flex justify-content-start">
+                                                    <a href="shop-detail.html" class="site-button">View Cart</a>
+                                                    <a href="shop-detail.html" class="site-button-secondry" >Checkout </a>
+                                                </div>
+
+                                            </div>
+                                        </div> 
+                                        
+                                    </div>
+                                </div>
+                            </div> -->
+
+                <!-- </div>
+
+                    </div>
+                </div>
+            </div> -->
+                <!--End Sidebar popup Item -->
+        </header>
+        <!-- HEADER END -->
+
+
+        <!-- CONTENT START -->
+        <div class="page-content">
+
+            <!-- INNER PAGE BANNER -->
+            <div class="wt-bnr-inr overlay-wraper bg-center">
+                <div class="overlay-main innr-bnr-olay"></div>
+                <div class="wt-bnr-inr-entry">
+                    <div class="banner-title-outer">
+                        <div class="banner-title-name">
+                            <h2 class="wt-title">Services</h2>
+                        </div>
+                        <!-- BREADCRUMB ROW -->
+                        <div>
+                            <ul class="wt-breadcrumb breadcrumb-style-2">
+                                <li><a href="index.html">Home</a></li>
+                                <li>Services</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <!-- BREADCRUMB ROW END -->
+                </div>
+            </div>
+            <!-- INNER PAGE BANNER END -->
+
+            <!-- WE PROVIDE SERVICE SECTION START -->
+            <div class="section-full p-t120 p-b90">
+                <div class="container">
+
+                    <!-- TITLE START-->
+                    <div class="section-head center wt-small-separator-outer">
+                        <div class="wt-small-separator site-text-primary">
+                            <i class="bi bi-house"></i>
+                            <div>Our Expertise</div>
+                        </div>
+                        <h2 class="wt-title title_split_anim">Get More With Our Expert Services</h2>
+                    </div>
+                    <!-- TITLE END-->
+
+                    <div class="section-content">
+                        <div class="service-icon-box-wrap">
+                            <div class="row justify-content-center d-flex">
+                                <!--Column-1-->
+                                <div class="col-xl-4 col-lg-4 col-md-6 m-b30">
+                                    <div class="service-icon-box-two">
+                                        <div class="service-media"><img src="images/services/1.jpg" alt=""></div>
+                                        <div class="service-icon-content">
+                                            <p>We deliver turnkey RCC and PEB building solutions, managing design,
+                                                procurement, construction for diverse projects.</p>
+                                            <a href="#" class="site-button-link site-text-primary">Read More</a>
+                                        </div>
+                                        <div class="service-icon-box-bootom">
+                                            <div class="service-icon"><span><img src="images/icons/construction.png"
+                                                        alt="#"></span></div>
+                                            <h3 class="wt-title"><a href="#">Engineering, Procurement
+                                                    &amp; Construction (EPC)</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Column 2-->
+                                <div class="col-xl-4 col-lg-4 col-md-6 m-b30">
+                                    <div class="service-icon-box-two">
+                                        <div class="service-media"><img src="images/services/2.jpg" alt=""></div>
+                                        <div class="service-icon-content">
+                                            <p>Custom steel buildings: rapid, durable, cost-effective, sustainable
+                                                industrial and commercial solutions.</p>
+                                            <a href="#" class="site-button-link site-text-primary">Read More</a>
+                                        </div>
+                                        <div class="service-icon-box-bootom">
+                                            <div class="service-icon"><span><img src="images/icons/peb.png"
+                                                        alt="#"></span></div>
+                                            <h3 class="wt-title"><a href="#">Pre-Engineered Building
+                                                    (PEB) Systems</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!--Column 3-->
+                                <div class="col-xl-4 col-lg-4 col-md-6 m-b30">
+                                    <div class="service-icon-box-two">
+                                        <div class="service-media"><img src="images/services/3.jpg" alt=""></div>
+                                        <div class="service-icon-content">
+                                            <p>Design and execution of durable RCC structures with value-engineered
+                                                solutions and structural audits.
+                                            </p>
+                                            <a href="#" class="site-button-link site-text-primary">Read More</a>
+                                        </div>
+
+                                        <div class="service-icon-box-bootom">
+                                            <div class="service-icon"><span><img src="images/icons/civil.png"
+                                                        alt="#"></span></div>
+                                            <h3 class="wt-title"><a href="#">Civil &amp; Structural
+                                                    Works</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Column-4-->
+                                <div class="col-xl-4 col-lg-4 col-md-6 m-b30">
+                                    <div class="service-icon-box-two">
+                                        <div class="service-media"><img src="images/services/4.jpg" alt=""></div>
+                                        <div class="service-icon-content">
+                                            <p>Architectural services: complete, functional, sustainable designs with
+                                                planning, visualization, compliance.</p>
+                                            <a href="#" class="site-button-link site-text-primary">Read More</a>
+                                        </div>
+                                        <div class="service-icon-box-bootom">
+                                            <div class="service-icon"><span><img src="images/icons/architecture.png"
+                                                        alt="#"></span></div>
+                                            <h3 class="wt-title"><a href="#">Architecture &amp; Design</a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Column-5-->
+                                <div class="col-xl-4 col-lg-4 col-md-6 m-b30">
+                                    <div class="service-icon-box-two">
+                                        <div class="service-media"><img src="images/services/5.jpg" alt=""></div>
+                                        <div class="service-icon-content">
+                                            <p>Turnkey interior design: commercial, residential, industrial spaces with
+                                                planning, MEP, finishes.</p>
+                                            <a href="#" class="site-button-link site-text-primary">Read More</a>
+                                        </div>
+                                        <div class="service-icon-box-bootom">
+                                            <div class="service-icon"><span><img src="images/icons/interior.png"
+                                                        alt="#"></span></div>
+                                            <h3 class="wt-title"><a href="#">Interior Design &amp;
+                                                    Fit-Out</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Column-6-->
+                                <div class="col-xl-4 col-lg-4 col-md-6 m-b30">
+                                    <div class="service-icon-box-two">
+                                        <div class="service-media"><img src="images/services/6.jpg" alt=""></div>
+                                        <div class="service-icon-content">
+                                            <p>Building maintenance services: AMC for civil, electrical, HVAC, plumbing
+                                                with preventive support.</p>
+                                            <a href="#" class="site-button-link site-text-primary">Read More</a>
+                                        </div>
+                                        <div class="service-icon-box-bootom">
+                                            <div class="service-icon"><span><img src="images/icons/maintanace.png"
+                                                        alt="#"></span></div>
+                                            <h3 class="wt-title"><a href="#">Maintenance &amp; Facility
+                                                    Management</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- WE PROVIDE SERVICE SECTION END -->
+
+            <!-- AWARDS SECTION START -->
+            <div class="section-full twm-achi-section-wrap p-t120 p-b90 ">
+                <!-- style="background-image: url(images/background/count-bg.jpg);"> -->
+                <div class="container">
+                    <div class="twm-achi-section-content">
+                        <div class="twm-achi-section-title">
+                            <h2 class="title title_split_anim">Awards and recognitions received for
+                                <span>Architecture</span> and <span>Interior</span> design
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="twm-achi-bx">
+                        <ul class="flex flex-fd-c flex-jc-sb">
+                            <!-- ITEM 01 -->
+                            <li>
+                                <div class="twm-achi-bx-conent">
+                                    <div class="twm-achi-bx-date"><b>03</b>2020</div>
+                                    <span>Interior Stylist Delmotes & Co.</span>
+                                    <div class="hover-reveal image01">
+                                        <!-- <img class="hidden-img"  src="images/award/pic1.jpg" alt="pic1"> -->
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- ITEM 02 -->
+                            <li>
+                                <div class="twm-achi-bx-conent">
+                                    <div class="twm-achi-bx-date"><b>06</b>2021</div>
+                                    <span>Design Assistant laurel Living Designs</span>
+
+                                    <div class="hover-reveal image02">
+                                        <!-- <img class="hidden-img"  src="images/award/pic2.jpg"  alt="pic2"> -->
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- ITEM 03 -->
+                            <li>
+                                <div class="twm-achi-bx-conent">
+                                    <div class="twm-achi-bx-date"><b>09</b>2022</div>
+                                    <span>Junior Interior Designer ABC Home Design Company</span>
+
+                                    <div class="hover-reveal image03">
+                                        <!-- <img class="hidden-img" src="images/award/pic3.jpg"  alt="pic3"> -->
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- ITEM 04 -->
+                            <li>
+                                <div class="twm-achi-bx-conent">
+                                    <div class="twm-achi-bx-date"><b>05</b>2023</div>
+                                    <span>Interior Designer & Project Coordinator Bridgerton Community Center</span>
+
+                                    <div class="hover-reveal image04">
+                                        <!-- <img class="hidden-img" src="images/award/pic4.jpg"  alt="pic4"> -->
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- ITEM 05 -->
+                            <li>
+                                <div class="twm-achi-bx-conent">
+                                    <div class="twm-achi-bx-date"><b>01</b>2025</div>
+                                    <span>BFA in Interior Design, Minor in Architectural History Sorbonne University
+                                        Paris, France </span>
+
+                                    <div class="hover-reveal image04">
+                                        <!-- <img class="hidden-img" src="images/award/pic5.jpg"  alt="pic5"> -->
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--AWARDS SECTION END -->
+
+            <!-- PRICING TABLE SECTION START -->
+            <!-- <div class="section-full p-t120 p-b90">
+                <div class="container"> -->
+
+            <!-- TITLE START-->
+            <!-- <div class="section-head center wt-small-separator-outer text-center text-white">
+                        <div class="wt-small-separator site-text-secondry">
+                            <i class="bi bi-house"></i>
+                            <div>Pricing</div>
+                        </div>
+                        <h2 class="wt-title  title_split_anim">Best offer pricing table.</h2>
+                    </div> -->
+            <!-- TITLE END-->
+
+            <!-- <div class="section-content">
+                        <div class="pricing-block-outer2">
+                            <div class="row  align-items-center justify-content-center"> -->
+            <!-- Column 1 -->
+            <!-- <div class="col-lg-4 col-md-6  m-b30">
+                                    <div class="pricing-table-2">
+                                        <div class="p-table-title">
+                                            <h3 class="wt-title">
+                                                Basic Plan
+                                            </h3>
+                                        </div>
+                                        <div class="pricing-table-content site-bg-white">
+                                            <div class="p-table-price">
+                                                <span>$17</span>
+                                                <p>Per/month</p>
+                                            </div>
+                                            <div class="p-table-list">
+                                                <ul>
+                                                    <li><i class="bi bi-check2"></i>Interior Design</li>
+                                                    <li><i class="bi bi-check2"></i>Custom design concept</li>
+                                                    <li class="li-disable"><i class="bi bi-x"></i>Floor plan and elevations</li>
+                                                    <li class="li-disable"><i class="bi bi-x"></i>Refreshing a single room or space</li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="p-table-btn">
+                                                <a href="about-1.html" class="site-button ">Purchase</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+            <!-- Column 2 -->
+            <!-- <div class="col-lg-4 col-md-6  m-b30">
+                                    <div class="pricing-table-2 pricing-highlight">
+                                        <div class="p-table-title">
+                                            <h3 class="wt-title">
+                                                Standard Plan
+                                            </h3>
+                                        </div>
+                                        <div class="pricing-table-content  site-bg-white">
+                                            <div class="p-table-price">
+                                                <span>$35</span>
+                                                <p>Per/month</p>
+                                            </div>
+                                            <div class="p-table-list">
+                                                <ul>
+                                                    <li><i class="bi bi-check2"></i>Architectural Design</li>
+                                                    <li><i class="bi bi-check2"></i>Project Management</li>
+                                                    <li><i class="bi bi-check2"></i>Full project management services</li>
+                                                    <li><i class="bi bi-check2"></i>Co-ordination with contractors</li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="p-table-btn">
+                                                <a href="about-1.html" class="site-button ">Purchase</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+            <!-- Column 3 -->
+            <!-- <div class="col-lg-4 col-md-6  m-b30">
+                                    <div class="pricing-table-2">
+                                        <div class="p-table-title">
+                                            <h3 class="wt-title">
+                                                Business Plan
+                                            </h3>
+                                        </div>
+                                        <div class="pricing-table-content  site-bg-white">
+                                            <div class="p-table-price">
+                                                <span>$59</span>
+                                                <p>Per/month</p>
+                                            </div>
+                                            <div class="p-table-list">
+                                                <ul>
+                                                    <li><i class="bi bi-check2"></i>Architectural Design</li>
+                                                    <li><i class="bi bi-check2"></i>Consultation with principal architect</li>
+                                                    <li><i class="bi bi-check2"></i>Analysis and feasibility study</li>
+                                                    <li><i class="bi bi-check2"></i>Custom design concept</li>
+                                                    
+                                                </ul>
+                                            </div>
+                                            <div class="p-table-btn">
+                                                <a href="about-1.html" class="site-button ">Purchase</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                 -->
+            <!-- </div>
+                        </div>
+                    </div>      
+                        
+                </div>
+            </div>    -->
+            <!-- PRICING TABLE SECTION END -->
+
+
+        </div>
+        <!-- CONTENT END -->
+
+       <!-- FOOTER START -->
+            <footer class="site-footer footer-dark">
+
+                <!-- FOOTER BLOCKES START -->
+                <div class="footer-top">
+
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-lg-4 col-md-12">
+
+                                <div class="widget widget_about">
+                                    <div class="logo-footer clearfix">
+                                        <a href="index.html"><img src="images/logo-white.png" alt=""></a>
+                                    </div>
+                                    <div class="call-us">
+                                        <a href="tel:+97145704989">+971 4 570 4989</a>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, iusto quando
+                                        vocibus te vim no meaFar far away, lorem
+                                        ipsum dolor sit amet, iusto quando.
+                                    </p>
+                                    <ul class="social-icons">
+                                        <li><a href="https://www.x.com"><i
+                                                    class="bi bi-twitter-x cursor-scale small"></i></a></li>
+                                        <li><a href="https://www.facebook.com "><i
+                                                    class="bi bi-facebook cursor-scale small"></i></a></li>
+                                        <li><a href="https://www.instagram.com"><i
+                                                    class="bi bi-instagram cursor-scale small"></i></a></li>
+                                        <li><a href="https://www.pinterest.com/"><i
+                                                    class="bi bi-pinterest cursor-scale small"></i></a></li>
+                                    </ul>
+
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="widget f-top-space">
+                                    <h3 class="widget-title">Address</h3>
+                                    <ul class="widget_address">
+                                        <li><i class="bi bi-geo-alt"></i>
+                                            <span> MEAD TO EXECUTE WORKS FOR INTERIOR DESIGN LLC</span>
+                                            Warehouse No.1
+                                            Al Qusais Industrial area 3
+                                            Dubai - UAE
+                                        </li>
+                                        <li><i class="bi bi-geo-alt"></i>
+                                            <span>MEAD HOPE FURNITURE MANUFACTURING LLC</span>
+                                            Warehouse No.2
+                                            Al Qusais Industrial area 4
+                                            Dubai - UAE
+                                        </li>
+                                        <li><i class="bi bi-envelope"></i>info@meadinteriors.com</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- <div class="col-lg-4 col-md-6">
+                            <div class="widget f-top-space recent-posts-entry">
+                                <h3 class="widget-title">Recent Post</h3>
+                                <div class="section-content">
+                                    <div class="widget-post-bx">
+                                        <div class="widget-post clearfix">
+                                            <div class="wt-post-media">
+                                                <img src="images/blog/recent-blog/pic1.jpg" alt="">
+                                            </div>
+                                            <div class="wt-post-info">
+                                                <div class="wt-post-meta">
+                                                    <ul>
+                                                        <li class="post-author">25 May</li>
+                                                        <li class="post-comment">05 Comment</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="wt-post-header">
+                                                    <a href="blog-single.html" class="post-title">Approved for
+                                                        restoration town hall.</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-post clearfix">
+                                            <div class="wt-post-media">
+                                                <img src="images/blog/recent-blog/pic2.jpg" alt="">
+                                            </div>
+                                            <div class="wt-post-info">
+                                                <div class="wt-post-meta">
+                                                    <ul>
+                                                        <li class="post-author">28 June</li>
+                                                        <li class="post-comment">05 Comment</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="wt-post-header">
+                                                    <a href="blog-single.html" class="post-title">Planning approved for
+                                                        restoration.</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-post clearfix">
+                                            <div class="wt-post-media">
+                                                <img src="images/blog/recent-blog/pic3.jpg" alt="">
+                                            </div>
+                                            <div class="wt-post-info">
+                                                <div class="wt-post-meta">
+                                                    <ul>
+                                                        <li class="post-author">28 June</li>
+                                                        <li class="post-comment">05 Comment</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="wt-post-header">
+                                                    <a href="blog-single.html" class="post-title">Crafting elegance with
+                                                        a modern twist.</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="widget f-top-space">
+                                    <h3 class="widget-title"> Locate Us</h3><br>
+                                    <div class="responsive-map">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28857.8201841703!2d55.37491540217954!3d25.296558725775512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43c7c1f4dc7f%3A0x498b988a3151ed4c!2sMEAD%20Interior%20Design%20LLC!5e0!3m2!1sen!2sin!4v1760689233548!5m2!1sen!2sin"
+                                            allowfullscreen="" loading="lazy"
+                                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- FOOTER COPYRIGHT -->
+
+                <div class="footer-bottom">
+                    <div class="container">
+                        <div class="container">
+                            <div class="footer-bottom-info d-flex justify-content-center">
+                                <div class="ftex">
+                                    <span class="copyrights-text">Copyright ©
+                                        <script>document.write(new Date().getFullYear());</script>| All Rights Reserved
+                                        by
+                                        <a href="#">MEAD Constructions</a> | Designed and Developed by <a
+                                            href="https://illforddigital.com/">Illford
+                                            Digital</a><br> <a href="#" title="">Privacy and
+                                            Policy</a> | <a href="#" title="">Terms and
+                                            Conditions</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </footer>
+            <!-- FOOTER END -->
+
+
+            <!-- BUTTON TOP START -->
+            <button class="scroltop"><span class="fa fa-angle-up  relative" id="btn-vibrate"></span></button>
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT  FILES ========================================= -->
+    <script src="js/jquery-3.7.1.min.js"></script><!-- JQUERY.MIN JS -->
+    <script src="js/popper.min.js"></script><!-- POPPER.MIN JS -->
+    <script src="js/bootstrap.min.js"></script><!-- BOOTSTRAP.MIN JS -->
+    <script src="js/magnific-popup.min.js"></script><!-- MAGNIFIC-POPUP JS -->
+    <script src="js/waypoints.min.js"></script><!-- WAYPOINTS JS -->
+    <script src="js/counterup.min.js"></script><!-- COUNTERUP JS -->
+
+    <script src="js/isotope.pkgd.min.js"></script><!-- MASONRY  -->
+    <script src="js/imagesloaded.pkgd.min.js"></script><!-- MASONRY  -->
+    <script src="js/owl.carousel.min.js"></script><!-- OWL  SLIDER  -->
+    <script src="js/theia-sticky-sidebar.js"></script><!-- STICKY SIDEBAR  -->
+    <script src="js/jquery.bootstrap-touchspin.js"></script><!-- FORM JS -->
+
+    <script src="js/lc_lightbox.lite.js"></script><!-- IMAGE POPUP -->
+    <script src="js/bootstrap-slider.min.js"></script><!-- Form js -->
+    <script src="js/swiper-bundle.min.js"></script> <!-- Swiper JS -->
+    <script src="js/img-parallax.js"></script>
+    <script src="js/wow.min.js"></script><!-- WOW ANIMATION JS -->
+
+    <!-- Title animation Js -->
+    <script src="js/gsap.min.js"></script><!-- cursor -->
+    <script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
+
+</body>
+
+</html>

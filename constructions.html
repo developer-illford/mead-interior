@@ -1,0 +1,1617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="robots" content="">
+    <meta name="description" content="">
+
+    <!-- FAVICONS ICON -->
+    <!-- <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-v2.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32-v2.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+
+    <!-- PAGE TITLE HERE -->
+    <title>MEAD</title>
+
+    <!-- MOBILE SPECIFIC -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css"><!-- BOOTSTRAP STYLE SHEET -->
+    <link rel="stylesheet" href="css/font-awesome.min.css"><!-- FONTAWESOME STYLE SHEET -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css"><!-- OWL CAROUSEL STYLE SHEET -->
+    <link rel="stylesheet" href="css/magnific-popup.min.css"><!-- MAGNIFIC POPUP STYLE SHEET -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"><!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/style.css"><!-- MAIN STYLE SHEET -->
+    <link rel="stylesheet" href="css/bootstrap-icons.css"><!-- BOOTSTRAP ICON STYLE SHEET -->
+    <link rel="stylesheet" href="css/lc_lightbox.css"><!-- Lc light box popup -->
+    <link rel="stylesheet" href="css/bootstrap-slider.min.css"><!-- Price Range Slider -->
+<style>
+    .loading-area{
+    position: fixed;
+    inset: 0;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+/* remove absolute positioning */
+.loading-pic{
+    position: relative;
+}
+
+/* Spinner */
+.loader{
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #e10600;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+    0%{ transform: rotate(0deg); }
+    100%{ transform: rotate(360deg); }
+}
+</style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+    <!-- LOADING AREA START ===== -->
+    <div class="loading-area">
+        <div class="loading-box"></div>
+        <div class="loading-pic">
+            <div class="loader"></div>
+        </div>
+    </div>
+    <!-- LOADING AREA  END ====== -->
+
+    <!-- Curser Pointer -->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <div class="page-wraper">
+
+        <!-- HEADER START -->
+        <header class="sticky-header site-header header-style-2 mobile-sider-drawer-menu">
+            <div class="main-bar-wraper  navbar-expand-lg">
+                <div class="main-bar">
+
+                    <div class="container-fluid clearfix">
+
+                        <div class="logo-header">
+                            <div class="logo-header-inner logo-header-one">
+                                <a href="index.html">
+                                    <img src="images/red-logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <ul class="company-site-info">
+                            <li><i class="bi bi-phone"></i><a href="tel:+97145704989" style="cursor: pointer;">+971 4
+                                    570 4989</a></li>
+                            <li><i class="bi bi-envelope"></i><a href="mailto:info@meadinteriors.com"
+                                    style="cursor: pointer;">info@meadinteriors.com</a></li>
+                        </ul>
+
+
+                        <!-- NAV Toggle Button -->
+                        <button id="mobile-side-drawer" data-target=".header-nav" data-toggle="collapse" type="button"
+                            class="navbar-toggler collapsed">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar icon-bar-first"></span>
+                            <span class="icon-bar icon-bar-two"></span>
+                            <span class="icon-bar icon-bar-three"></span>
+                        </button>
+
+                        <!-- MAIN Vav -->
+                        <div class="nav-animation header-nav navbar-collapse collapse d-flex justify-content-end">
+
+
+                            <ul class=" nav navbar-nav">
+                                <li><a href="index.html">Home</a></li>
+                               <li><a href="about.html">About</a></li>
+                                        <!-- <li class="menu-arrow"><a href="services.html">Services</a></li> -->
+
+                                   <!-- <li class="has-child"><a href="javascript:;">Interiors</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="service-detail.html">Interior Design</a></li>
+                                        <li><a href="service-detail.html">Smart Space</a></li>
+                                      <li><a href="service-detail.html">Furnture</a></li>
+                                      <li><a href="service-detail.html">Joinery</a></li>
+                                    </ul>                                                                 
+                                </li>
+                                   <li class="has-child"><a href="javascript:;">Construction</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="service-detail.html">Engineering, Procurement & Construction (EPC)</a></li>
+                                        <li><a href="service-detail.html">Pre-Engineered Building (PEB) Systems</a></li>
+                                        <li><a href="service-detail.html">Civil & Structural Works</a></li>
+                                        <li><a href="service-detail.html">Architecture & Design</a></li>
+                                        <li><a href="service-detail.html">Interior Design & Fit-Out</a></li>
+                                        <li><a href="service-detail.html">Maintenance & Facility Management</a></li>
+                                    </ul>                                                                 
+                                </li> -->
+
+
+                                  <li class="has-child">
+                                    <a href="javascript:;">Services</a>
+                                    <ul class="sub-menu">
+
+                                        <li><a href="javascript:;">Interiors</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="interiors.html#residential-interior-design">Residential Interior Design</a></li>
+                                                <li><a href="interiors.html#commercial-interior-fit-outs">Commercial Interior Fit-Outs</a></li>
+                                                  <li><a href="interiors.html#modular-kitchen-solutions">Modular Kitchen Solutions</a></li>
+                                                    <li><a href="interiors.html#bedroom-and-wardrobe-design">Bedroom & Wardrobe Design</a></li>
+                                                      <li><a href="interiors.html#false-ceiling-and-lighting-design">False Ceiling & Lighting Design</a></li>
+                                                        <li><a href="interiors.html#renovation-and-remodeling-services">Renovation & Remodeling Services</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li><a href="javascript:;">Constructions</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="constructions.html#residential-construction">Residential Construction</a></li>
+                                                <li><a href="constructions.html#commercial-construction">Commercial Construction</a></li>
+                                                   <li><a href="constructions.html#turnkey-construction-projects">Turnkey Construction Projects</a></li>
+                                                      <li><a href="constructions.html#structural-and-civil-works">Structural & Civil Works</a></li>
+                                                         <li><a href="constructions.html#renovation-and-extension-projects">Renovation & Extension Projects</a></li>
+                                                            <li><a href="constructions.html#project-management-and-consulting">Project Management & Consulting</a></li>
+                                            </ul>
+                                        </li>                                              
+                                    </ul>                                
+                                </li>
+
+
+
+                                <li><a href="project.html">Portfolio</a></li>
+                                <li><a href="career.html">Careers</a></li>
+                                 
+                                <li><a href="contact.html">Contact</a></li>
+
+                                </ul>
+                           
+                       </div>
+
+
+
+                                <!-- SITE Search -->
+                                <div id="search">
+                                    <span class="close-btn">X</span>
+                                    <form role="search" id="searchform" action="/search" method="get" class="radius-xl">
+                                        <div class="input-group">
+                                            <input class="form-control" value="" name="q" type="search"
+                                                placeholder="Search...">
+                                            <span class="input-group-append">
+                                                <button type="button" class="search-btn">
+                                                    <i class="bi bi-search"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Sidebar popup Item -->
+                <!-- <div class="xs-sidebar-group info-group">
+                <div class="xs-overlay xs-bg-black"></div>
+                <div class="xs-sidebar-widget">
+
+                    <div class="sidebar-widget-container">
+                        <div class="widget-heading">
+                            <a href="#" class="close-side-widget">
+                                <i class="bi bi-x-square-fill"></i>
+                            </a>
+                        </div>
+
+                        <div class="sidebar-textwidget"> -->
+
+                <!-- Sidebar Info Content -->
+                <!-- <div class="sidebar-info-contents">
+                                <div class="content-inner">
+                                    <div class="content-box">
+
+                                        <div class="cart-dropdown-item-wraper">
+                                            <div class="nav-cart-content">
+                                                
+                                                <div class="nav-cart-items">
+                                                    <div class="nav-cart-item">
+                                                        <div class="nav-cart-item-image">
+                                                            <a href="shop-detail.html"><img src="images/cart/pic-1.jpg" alt="p-1"></a>
+                                                        </div>
+                                                        <div class="nav-cart-item-desc">
+                                                            <span class="nav-cart-item-price"><strong>2</strong> x $ 19.99</span>
+                                                            <a href="shop-detail.html">Potted plants with shelf and chair</a>
+                                                            <a href="shop-detail.html" class="nav-cart-item-quantity radius-sm">x</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nav-cart-item">
+                                                        <div class="nav-cart-item-image">
+                                                            <a href="shop-detail.html"><img src="images/cart/pic-2.jpg" alt="p-2"></a>
+                                                        </div>
+                                                        <div class="nav-cart-item-desc">
+                                                            <span class="nav-cart-item-price"><strong>1</strong> x $ 24.99</span>
+                                                            <a href="shop-detail.html">Elegant plants decoration vase</a>
+                                                            <a href="shop-detail.html" class="nav-cart-item-quantity radius-sm">x</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nav-cart-item">
+                                                        <div class="nav-cart-item-image">
+                                                            <a href="shop-detail.html"><img src="images/cart/pic-3.jpg" alt="p-1"></a>
+                                                        </div>
+                                                        <div class="nav-cart-item-desc">
+                                                            <span class="nav-cart-item-price"><strong>2</strong> x $ 19.99</span>
+                                                            <a href="shop-detail.html">Round plants decoration vase</a>
+                                                            <a href="shop-detail.html" class="nav-cart-item-quantity radius-sm">x</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nav-cart-item">
+                                                        <div class="nav-cart-item-image">
+                                                            <a href="shop-detail.html"><img src="images/cart/pic-4.jpg" alt="p-2"></a>
+                                                        </div>
+                                                        <div class="nav-cart-item-desc">
+                                                            <span class="nav-cart-item-price"><strong>1</strong> x $ 24.99</span>
+                                                            <a href="shop-detail.html">Plant pot on stairs interior design</a>
+                                                            <a href="shop-detail.html" class="nav-cart-item-quantity radius-sm">x</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="nav-cart-title p-tb10 p-lr15 d-flex">
+                                                    <h4  class="m-a0">Subtotal:</h4>
+                                                    <h5 class="m-a0">$67.97</h5>
+                                                </div>
+
+                                                <div class="nav-cart-action d-flex justify-content-start">
+                                                    <a href="shop-detail.html" class="site-button">View Cart</a>
+                                                    <a href="shop-detail.html" class="site-button-secondry" >Checkout </a>
+                                                </div>
+
+                                            </div>
+                                        </div> 
+                                        
+                                    </div>
+                                </div>
+                            </div> -->
+
+                <!-- </div>
+
+                    </div>
+                </div>
+            </div> -->
+                <!--End Sidebar popup Item -->
+        </header>
+        <!-- HEADER END -->
+
+
+        <!-- CONTENT START -->
+        <div class="page-content">
+
+            <!-- INNER PAGE BANNER -->
+            <div class="wt-bnr-inr overlay-wraper bg-center">
+                <div class="overlay-main innr-bnr-olay"></div>
+                <div class="wt-bnr-inr-entry">
+                    <div class="banner-title-outer">
+                        <div class="banner-title-name">
+                            <h2 class="wt-title">Constructions</h2>
+                        </div>
+                        <!-- BREADCRUMB ROW -->
+                        <div>
+                            <ul class="wt-breadcrumb breadcrumb-style-2">
+                                <li><a href="index.html">Home</a></li>
+                                <li>Constructions</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <!-- BREADCRUMB ROW END -->
+                </div>
+            </div>
+            <!-- INNER PAGE BANNER END -->
+<style>
+    .service-icon-box-two{height: 675px;}
+    .service-icon-box-two .service-icon-content {
+    padding: 0px 0px 0px 0px;
+}
+
+.service-icon-box-two .service-icon-box-bootom {
+    padding-top: 20px;
+}
+
+.hyphen-list {
+    list-style: none;
+    padding-left: 15px;
+}
+
+.hyphen-list li {
+    position: relative;
+    padding-left: 17px;
+    margin-bottom: 8px;
+}
+
+.hyphen-list li::before {
+    content: "-";
+    position: absolute;
+    left: 0;
+    color: #000;
+    font-weight: 600;
+}
+
+
+</style>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+
+
+<style>
+.service-media {
+    width: 100%;
+    height: 390px;
+    overflow: hidden;
+    position: relative;
+}
+
+.service-media img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Hide arrows */
+.swiper-button-next,
+.swiper-button-prev {
+    opacity: 0;
+    transition: 0.3s ease;
+    color: #fff;
+}
+
+/* Show arrows on hover */
+.service-media:hover .swiper-button-next,
+.service-media:hover .swiper-button-prev {
+    opacity: 1;
+}
+
+/* Optional: smaller arrows */
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+.service-media .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.service-media .swiper-wrapper {
+    height: 100%;
+}
+
+.service-media .swiper-slide {
+    height: 100%;
+}
+
+/* Image full cover */
+.service-media .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+.service-icon-box-two .service-media:before{
+    content: unset;
+}
+
+.swiper-button-prev{
+    left:0;
+}
+.swiper-button-next{
+    right:0;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+</style>
+
+
+
+
+
+
+
+
+
+            <!-- WE PROVIDE SERVICE SECTION START -->
+            <div class="section-full p-t120 p-b90">
+                <div class="container">
+
+                    <!-- TITLE START-->
+                    <div class="section-head center wt-small-separator-outer">
+                        <div class="wt-small-separator site-text-primary">
+                            <i class="bi bi-house"></i>
+                            <div>Services</div>
+                        </div>
+                        <h2 class="wt-title title_split_anim">Our Constructions</h2>
+                    </div>
+                    <!-- TITLE END-->
+
+                    <div class="section-content">
+                        <div class="service-icon-box-wrap">
+
+                            <div class="row justify-content-center d-flex">
+                             
+                                <div class="col-xl-4 col-lg-4 col-md-6 m-b30" id="residential-construction">
+                                    <div class="service-icon-box-two">
+                                        <!-- <div class="service-media"><img src="images/services/1.jpg" alt=""></div> -->
+
+<div class="service-media">
+    <div class="swiper mySwiper1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/services/1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/services/2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/services/3.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</div>
+
+                                          <div class="service-icon-box-bootom">
+                                          
+                                            <h3 class="wt-title"><a href="javascript:void(0);" class="openPopup">Residential Construction</a></h3>
+                                        </div>
+
+                                        <div class="service-icon-content">
+                                            <p>
+                                                <ul class="hyphen-list"><li>Custom home building</li>
+                                                <li>Villas</li><li>Duplex / Triplex homes</li></ul>
+                                            </p>
+                                           <a href="javascript:void(0);" class="site-button-link site-text-primary openPopup">Read More</a>
+                                        </div>
+
+
+
+
+                                        
+                                        
+<div class="popup-content" style="display:none;">
+            <h2>Residential Construction</h2>
+
+     
+
+             <div class="service-item">
+            <h3>Custom home building</h3>
+            <p>
+                  Personalized home construction tailored to your design preferences, functional requirements, and budget expectations.
+            </p>
+        </div>
+
+        <div class="service-item">
+            <h3>Villas</h3>
+            <p>
+                 Premium villa construction featuring spacious layouts, elegant architecture, and superior finishes for luxurious living.
+            </p>
+        </div>
+
+            <div class="service-item">
+            <h3>Duplex / Triplex homes</h3>
+            <p>
+                Efficient multi-level home construction designed to maximize space utilization while maintaining comfort and structural integrity.
+            </p>
+        </div>
+
+
+
+  
+              <div  style="display: flex;align-items: end;justify-content: flex-start;">
+             <button type="button" class="site-button" onclick="window.location.href='project.html'">
+    Portfolio
+</button></div>
+
+        </div>
+
+
+                                      
+                                    </div>
+                                </div>
+                           
+                                <div class="col-xl-4 col-lg-4 col-md-6 m-b30" id="commercial-construction">
+                                    <div class="service-icon-box-two">
+                                        <!-- <div class="service-media"><img src="images/services/2.jpg" alt=""></div> -->
+
+
+                                        <div class="service-media">
+    <div class="swiper mySwiper1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/services/3.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/services/2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/services/1.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</div>
+
+
+
+                                        <div class="service-icon-box-bootom">
+                                          
+                                            <h3 class="wt-title"><a href="javascript:void(0);" class="openPopup">Commercial Construction</a></h3>
+                                        </div>
+                                        <div class="service-icon-content">
+                                            <p>
+                                                 <ul class="hyphen-list"><li>Office buildings</li>
+                                                <li>Retail complexes</li>
+                                            <li>Warehouses</li></ul>
+                                            </p>
+                                             <a href="javascript:void(0);" class="site-button-link site-text-primary openPopup">Read More</a>
+                                        </div>
+
+
+
+
+                                        
+<div class="popup-content" style="display:none;">
+            <h2>Commercial Construction</h2>
+
+     
+
+             <div class="service-item">
+            <h3>Office buildings</h3>
+            <p>
+                        Modern and functional office building construction focused on optimized layouts, structural strength, and long-term operational efficiency.
+            </p>
+        </div>
+
+        <div class="service-item">
+            <h3>Retail complexes</h3>
+            <p>
+                     Professionally designed retail complexes that enhance customer flow, maximize commercial space utilization, and support brand visibility.
+            </p>
+        </div>
+
+        <div class="service-item">
+            <h3>Warehouses</h3>
+            <p>
+                          Robust warehouse construction solutions built for high load capacity, efficient storage systems, and smooth logistics operations.
+            </p>
+        </div>
+
+  
+              <div  style="display: flex;align-items: end;justify-content: flex-start;">
+             <button type="button" class="site-button" onclick="window.location.href='project.html'">
+    Portfolio
+</button></div>
+
+        </div>
+
+
+
+
+
+
+
+
+                                     
+                                    </div>
+                                </div>
+
+
+                             
+                                <div class="col-xl-4 col-lg-4 col-md-6 m-b30" id="turnkey-construction-projects">
+                                    <div class="service-icon-box-two">
+                                        <!-- <div class="service-media"><img src="images/services/3.jpg" alt=""></div> -->
+
+<div class="service-media">
+    <div class="swiper mySwiper1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/services/2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/services/3.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/services/1.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</div>
+
+
+                                        <div class="service-icon-box-bootom">
+                                          
+                                            <h3 class="wt-title"><a href="javascript:void(0);" class="openPopup">Turnkey Construction Projects</a></h3>
+                                        </div>
+                                        <div class="service-icon-content">
+                                            <p> <ul class="hyphen-list"><li>End-to-end project execution</li>
+                                                <li>Design + Build services</li>
+                                           
+                                        </ul>
+                                            </p>
+                                             <a href="javascript:void(0);" class="site-button-link site-text-primary openPopup">Read More</a>
+                                        </div>
+
+
+
+
+
+                                        
+<div class="popup-content" style="display:none;">
+            <h2>Turnkey Construction Projects</h2>
+
+     
+
+             <div class="service-item">
+            <h3>End-to-end project execution</h3>
+            <p>
+                        Comprehensive management of all project phases including planning, procurement, construction, and finishing for a hassle-free experience.
+            </p>
+        </div>
+
+        <div class="service-item">
+            <h3>Design + Build services</h3>
+            <p>
+                       Integrated design and construction services that streamline communication, reduce costs, and deliver cohesive, high-quality project outcomes.
+            </p>
+        </div>
+
+  
+
+  
+              <div  style="display: flex;align-items: end;justify-content: flex-start;">
+             <button type="button" class="site-button" onclick="window.location.href='project.html'">
+    Portfolio
+</button></div>
+
+        </div>
+
+
+
+
+                                       
+                                    </div>
+                                </div>
+                               
+                                <div class="col-xl-4 col-lg-4 col-md-6 m-b30" id="structural-and-civil-works">
+                                    <div class="service-icon-box-two">
+                                        <!-- <div class="service-media"><img src="images/services/4.jpg" alt=""></div> -->
+
+
+                                        <div class="service-media">
+    <div class="swiper mySwiper1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/services/1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/services/2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/services/3.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</div>
+
+
+                                        <div class="service-icon-box-bootom">
+                                          
+                                            <h3 class="wt-title"><a href="javascript:void(0);" class="openPopup">Structural & Civil Works</a></h3>
+                                        </div>
+                                        <div class="service-icon-content">
+                                            <p><ul class="hyphen-list"><li>Foundation works</li>
+                                                <li>RCC structures</li>
+                                            <li>Structural strengthening</li></ul></p>
+                                             <a href="javascript:void(0);" class="site-button-link site-text-primary openPopup">Read More</a>
+                                        </div>
+
+
+
+
+<div class="popup-content" style="display:none;">
+            <h2>Structural & Civil Works</h2>
+
+     
+
+             <div class="service-item">
+            <h3>Foundation works</h3>
+            <p>
+                       Strong and reliable foundation solutions including excavation, footing, and base preparation to provide maximum structural stability.
+            </p>
+        </div>
+
+        <div class="service-item">
+            <h3>RCC structures</h3>
+            <p>
+                         Reinforced Cement Concrete (RCC) construction for beams, columns, slabs, and frameworks designed to deliver superior strength and load-bearing capacity.
+            </p>
+        </div>
+
+        <div class="service-item">
+            <h3>Structural strengthening</h3>
+            <p>
+                        Advanced reinforcement techniques to enhance the stability, durability, and load resistance of existing structures.
+            </p>
+        </div>
+
+  
+              <div  style="display: flex;align-items: end;justify-content: flex-start;">
+             <button type="button" class="site-button" onclick="window.location.href='project.html'">
+    Portfolio
+</button></div>
+
+        </div>
+
+
+
+
+
+                                    
+                                    </div>
+                                </div>
+                           
+                                <div class="col-xl-4 col-lg-4 col-md-6 m-b30" id="renovation-and-extension-projects">
+                                    <div class="service-icon-box-two">
+                                        <!-- <div class="service-media"><img src="images/services/5.jpg" alt=""></div> -->
+
+
+                                        
+
+                                        <div class="service-media">
+    <div class="swiper mySwiper1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/services/3.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/services/2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/services/1.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</div>
+
+                                        <div class="service-icon-box-bootom">
+                                          
+                                            <h3 class="wt-title"><a href="javascript:void(0);" class="openPopup">Renovation & Extension Projects</a></h3>
+                                        </div>
+                                        <div class="service-icon-content">
+                                            <p><ul class="hyphen-list"><li>Building extensions</li>
+                                                <li>Floor additions</li>
+                                            <li>AStructural modifications</li></ul></p>
+                                         <a href="javascript:void(0);" class="site-button-link site-text-primary openPopup">Read More</a>
+                                            
+                                        </div>
+
+
+
+
+                                        <div class="popup-content" style="display:none;">
+            <h2>Renovation & Extension Projects</h2>
+
+     
+
+             <div class="service-item">
+            <h3>Building extensions</h3>
+            <p>
+                      Seamless structural extensions that add new rooms or expand existing spaces while maintaining architectural consistency and structural integrity.
+            </p>
+        </div>
+
+        <div class="service-item">
+            <h3>Floor additions</h3>
+            <p>
+                       Professional vertical expansion solutions that increase usable space with safe construction practices and optimized structural planning.
+            </p>
+        </div>
+
+        <div class="service-item">
+            <h3>Structural modifications</h3>
+            <p>
+                         Expert structural alterations including beam reinforcement, wall adjustments, and layout reconfiguration to improve strength and space utilization.
+            </p>
+        </div>
+
+            <!-- <a href="projects.html" class="site-button">more</a> -->
+              <div  style="display: flex;align-items: end;justify-content: flex-start;">
+             <button type="button" class="site-button" onclick="window.location.href='project.html'">
+    Portfolio
+</button></div>
+
+        </div>
+
+
+
+
+                                 
+                                    </div>
+                                </div>
+                              
+                                <div class="col-xl-4 col-lg-4 col-md-6 m-b30" id="project-management-and-consulting">
+                                    <div class="service-icon-box-two">
+                                        <!-- <div class="service-media"><img src="images/services/6.jpg" alt=""></div> -->
+
+
+                                        
+
+                                        <div class="service-media">
+    <div class="swiper mySwiper1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/services/2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/services/1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/services/3.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</div>
+
+                                        <div class="service-icon-box-bootom">
+                                          
+                                            <h3 class="wt-title"><a href="javascript:void(0);" class="openPopup">Project Management & Consulting</a></h3>
+                                        </div>
+                                        <div class="service-icon-content">
+                                            <p><ul class="hyphen-list"><li>Planning & approvals</li>
+                                                <li>Budget estimation</li>
+                                            <li>Site supervision & quality control</li></ul></p>
+                                            <a href="javascript:void(0);" class="site-button-link site-text-primary openPopup">Read More</a>
+                                        </div>
+
+
+
+             <div class="popup-content" style="display:none;">
+            <h2>Project Management & Consulting</h2>
+
+            <!-- <img src="images/services/2.jpg" style="width:100%; margin-bottom:15px;"> -->
+
+            <!-- <p>
+                We provide complete renovation and remodeling solutions
+                for residential and commercial properties with modern design concepts.
+            </p> -->
+
+            <!-- <ul class="hyphen-list">
+                <li>Home renovation</li>
+                <li>Office remodeling</li>
+                <li>Structural interior upgrades</li>
+             
+            </ul> -->
+
+             <div class="service-item">
+            <h3>Planning & approvals</h3>
+            <p>
+                       Assistance with project planning, documentation, and obtaining necessary approvals to ensure compliance with regulations and smooth project initiation.
+            </p>
+        </div>
+
+        <div class="service-item">
+            <h3>Budget estimation</h3>
+            <p>
+                        Accurate cost analysis and detailed budget planning to help manage expenses effectively without compromising quality and design standards.
+            </p>
+        </div>
+
+        <div class="service-item">
+            <h3>Site supervision & quality control</h3>
+            <p>
+                      On-site monitoring and strict quality checks to maintain construction standards, ensure safety, and deliver projects as per specifications.
+            </p>
+        </div>
+
+            <!-- <a href="projects.html" class="site-button">more</a> -->
+             <div  style="display: flex;align-items: end;justify-content: flex-start;">
+             <button type="button" class="site-button" onclick="window.location.href='project.html'">
+    Portfolio
+</button></div>
+
+        </div>
+
+
+                                   
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- WE PROVIDE SERVICE SECTION END -->
+
+
+
+
+
+<div class="section-full twm-category-carousal2-area" style="margin-bottom: 50px;">
+                <div class="owl-carousel twm-category-carousal-slider">
+                    <!-- COLUMN 1 -->
+                    <div class="item">
+                        <div class="twm_category_bx cursor-scale wow fadeInDown" data-wow-duration="1000ms">
+                            <span class="ao-our-categori-icon">
+                                <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="spin2" cx="400" cy="400" fill="none"
+                                      r="200" stroke-width="50" stroke="#E387FF"
+                                      stroke-dasharray="700 1400"
+                                      stroke-linecap="round" />
+                                </svg>
+                            </span>
+                            <div class="twm-category-name">Interior</div>
+                        </div>
+                    </div>
+                    <!-- COLUMN 2 -->
+                    <div class="item">
+                        <div class="twm_category_bx cursor-scale wow fadeInDown" data-wow-duration="1000ms">
+                            <span class="ao-our-categori-icon">
+                                <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="spin2" cx="400" cy="400" fill="none"
+                                      r="200" stroke-width="50" stroke="#E387FF"
+                                      stroke-dasharray="700 1400"
+                                      stroke-linecap="round" />
+                                </svg>
+                            </span>
+                            <div class="twm-category-name">Architeture</div>
+                        </div>
+                    </div>
+                    <!-- COLUMN 3 -->
+                    <div class="item">
+                        <div class="twm_category_bx cursor-scale wow fadeInDown" data-wow-duration="1000ms">
+                            <span class="ao-our-categori-icon">
+                                <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="spin2" cx="400" cy="400" fill="none"
+                                      r="200" stroke-width="50" stroke="#E387FF"
+                                      stroke-dasharray="700 1400"
+                                      stroke-linecap="round" />
+                                </svg>
+                            </span>
+                            <div class="twm-category-name">Modern</div>
+                        </div>
+                    </div>
+                    <!-- COLUMN 4 -->
+                    <div class="item">
+                        <div class="twm_category_bx cursor-scale wow fadeInDown" data-wow-duration="1000ms">
+                            <span class="ao-our-categori-icon">
+                                <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="spin2" cx="400" cy="400" fill="none"
+                                      r="200" stroke-width="50" stroke="#E387FF"
+                                      stroke-dasharray="700 1400"
+                                      stroke-linecap="round" />
+                                </svg>
+                            </span>
+                            <div class="twm-category-name">Construction</div>
+                        </div>
+                    </div>
+                    <!-- COLUMN 5 -->
+                    <div class="item">
+                        <div class="twm_category_bx cursor-scale wow fadeInDown" data-wow-duration="1000ms">
+                            <span class="ao-our-categori-icon">
+                                <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="spin2" cx="400" cy="400" fill="none"
+                                      r="200" stroke-width="50" stroke="#E387FF"
+                                      stroke-dasharray="700 1400"
+                                      stroke-linecap="round" />
+                                </svg>
+                            </span>
+                            <div class="twm-category-name">Villa</div>
+                        </div>
+                    </div>
+                    <!-- COLUMN 6 -->
+                    <div class="item">
+                        <div class="twm_category_bx cursor-scale wow fadeInDown" data-wow-duration="1000ms">
+                            <span class="ao-our-categori-icon">
+                                <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="spin2" cx="400" cy="400" fill="none"
+                                      r="200" stroke-width="50" stroke="#E387FF"
+                                      stroke-dasharray="700 1400"
+                                      stroke-linecap="round" />
+                                </svg>
+                            </span>
+                            <div class="twm-category-name">Bathroom</div>
+                        </div>
+                    </div>
+                    <!-- COLUMN 7 -->
+                    <div class="item">
+                        <div class="twm_category_bx cursor-scale wow fadeInDown" data-wow-duration="1000ms">
+                            <span class="ao-our-categori-icon">
+                                <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="spin2" cx="400" cy="400" fill="none"
+                                      r="200" stroke-width="50" stroke="#E387FF"
+                                      stroke-dasharray="700 1400"
+                                      stroke-linecap="round" />
+                                </svg>
+                            </span>
+                            <div class="twm-category-name">Living Room</div>
+                        </div>
+                    </div>
+                    <!-- COLUMN 8 -->
+                    <div class="item">
+                        <div class="twm_category_bx cursor-scale wow fadeInDown" data-wow-duration="1000ms">
+                            <span class="ao-our-categori-icon">
+                                <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="spin2" cx="400" cy="400" fill="none"
+                                      r="200" stroke-width="50" stroke="#E387FF"
+                                      stroke-dasharray="700 1400"
+                                      stroke-linecap="round" />
+                                </svg>
+                            </span>
+                            <div class="twm-category-name">Furniture & Decoration</div>
+                        </div>
+                    </div>
+                    <!-- COLUMN 9 -->
+                    <div class="item">
+                        <div class="twm_category_bx cursor-scale wow fadeInDown" data-wow-duration="1000ms">
+                            <span class="ao-our-categori-icon">
+                                <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="spin2" cx="400" cy="400" fill="none"
+                                      r="200" stroke-width="50" stroke="#E387FF"
+                                      stroke-dasharray="700 1400"
+                                      stroke-linecap="round" />
+                                </svg>
+                            </span>
+                            <div class="twm-category-name">Floor Plan</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- AWARDS SECTION START -->
+            
+                       <div class="section-full  get-intouch-style-2-wrap parallax-section" style="margin-bottom:50px;">
+                <div class="get-intouch-style-2  overlay-wraper p-t120 p-b120 parallax-image" style="background-image: url(images/background/get-in-touch.png);"></div>
+                <div class="get-intouch-style-2-inner site-text-white">
+                    <span>Get in Touch with Us</span>                                
+                    <h2 class="wt-title site-text-white title_split_anim ">Building Trust, Delivering Quality</h2>
+                    <div class="site-center-btn text-center">
+                        <a href="contact.html" class="site-button">Connect Now</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--AWARDS SECTION END -->
+
+            <!-- PRICING TABLE SECTION START -->
+            <!-- <div class="section-full p-t120 p-b90">
+                <div class="container"> -->
+
+            <!-- TITLE START-->
+            <!-- <div class="section-head center wt-small-separator-outer text-center text-white">
+                        <div class="wt-small-separator site-text-secondry">
+                            <i class="bi bi-house"></i>
+                            <div>Pricing</div>
+                        </div>
+                        <h2 class="wt-title  title_split_anim">Best offer pricing table.</h2>
+                    </div> -->
+            <!-- TITLE END-->
+
+            <!-- <div class="section-content">
+                        <div class="pricing-block-outer2">
+                            <div class="row  align-items-center justify-content-center"> -->
+            <!-- Column 1 -->
+            <!-- <div class="col-lg-4 col-md-6  m-b30">
+                                    <div class="pricing-table-2">
+                                        <div class="p-table-title">
+                                            <h3 class="wt-title">
+                                                Basic Plan
+                                            </h3>
+                                        </div>
+                                        <div class="pricing-table-content site-bg-white">
+                                            <div class="p-table-price">
+                                                <span>$17</span>
+                                                <p>Per/month</p>
+                                            </div>
+                                            <div class="p-table-list">
+                                                <ul>
+                                                    <li><i class="bi bi-check2"></i>Interior Design</li>
+                                                    <li><i class="bi bi-check2"></i>Custom design concept</li>
+                                                    <li class="li-disable"><i class="bi bi-x"></i>Floor plan and elevations</li>
+                                                    <li class="li-disable"><i class="bi bi-x"></i>Refreshing a single room or space</li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="p-table-btn">
+                                                <a href="about-1.html" class="site-button ">Purchase</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+            <!-- Column 2 -->
+            <!-- <div class="col-lg-4 col-md-6  m-b30">
+                                    <div class="pricing-table-2 pricing-highlight">
+                                        <div class="p-table-title">
+                                            <h3 class="wt-title">
+                                                Standard Plan
+                                            </h3>
+                                        </div>
+                                        <div class="pricing-table-content  site-bg-white">
+                                            <div class="p-table-price">
+                                                <span>$35</span>
+                                                <p>Per/month</p>
+                                            </div>
+                                            <div class="p-table-list">
+                                                <ul>
+                                                    <li><i class="bi bi-check2"></i>Architectural Design</li>
+                                                    <li><i class="bi bi-check2"></i>Project Management</li>
+                                                    <li><i class="bi bi-check2"></i>Full project management services</li>
+                                                    <li><i class="bi bi-check2"></i>Co-ordination with contractors</li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="p-table-btn">
+                                                <a href="about-1.html" class="site-button ">Purchase</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+            <!-- Column 3 -->
+            <!-- <div class="col-lg-4 col-md-6  m-b30">
+                                    <div class="pricing-table-2">
+                                        <div class="p-table-title">
+                                            <h3 class="wt-title">
+                                                Business Plan
+                                            </h3>
+                                        </div>
+                                        <div class="pricing-table-content  site-bg-white">
+                                            <div class="p-table-price">
+                                                <span>$59</span>
+                                                <p>Per/month</p>
+                                            </div>
+                                            <div class="p-table-list">
+                                                <ul>
+                                                    <li><i class="bi bi-check2"></i>Architectural Design</li>
+                                                    <li><i class="bi bi-check2"></i>Consultation with principal architect</li>
+                                                    <li><i class="bi bi-check2"></i>Analysis and feasibility study</li>
+                                                    <li><i class="bi bi-check2"></i>Custom design concept</li>
+                                                    
+                                                </ul>
+                                            </div>
+                                            <div class="p-table-btn">
+                                                <a href="about-1.html" class="site-button ">Purchase</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                 -->
+            <!-- </div>
+                        </div>
+                    </div>      
+                        
+                </div>
+            </div>    -->
+            <!-- PRICING TABLE SECTION END -->
+
+
+        </div>
+        <!-- CONTENT END -->
+
+       <!-- FOOTER START -->
+            <footer class="site-footer footer-dark">
+
+                <!-- FOOTER BLOCKES START -->
+                <div class="footer-top">
+
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-lg-4 col-md-12">
+
+                                <div class="widget widget_about">
+                                    <div class="logo-footer clearfix">
+                                        <a href="index.html"><img src="images/logo-white.png" alt=""></a>
+                                    </div>
+                                    <div class="call-us">
+                                        <a href="tel:+97145704989">+971 4 570 4989</a>
+                                    </div>
+                                    <p>MEAD is a leading EPC and interior design firm, specializing in RCC, Pre-Engineered Buildings, and Custom Interior Solutions.
+                                    </p>
+                                    <ul class="social-icons">
+                                        <li><a href="https://www.x.com"><i
+                                                    class="bi bi-twitter-x cursor-scale small"></i></a></li>
+                                        <li><a href="https://www.facebook.com "><i
+                                                    class="bi bi-facebook cursor-scale small"></i></a></li>
+                                        <li><a href="https://www.instagram.com"><i
+                                                    class="bi bi-instagram cursor-scale small"></i></a></li>
+                                        <li><a href="https://www.pinterest.com/"><i
+                                                    class="bi bi-pinterest cursor-scale small"></i></a></li>
+                                    </ul>
+
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="widget f-top-space">
+                                    <h3 class="widget-title">Address</h3>
+                                    <ul class="widget_address">
+                                        <li><i class="bi bi-geo-alt"></i>
+                                            <span> MEAD TO EXECUTE WORKS FOR INTERIOR DESIGN LLC</span>
+                                            Warehouse No.1
+                                            Al Qusais Industrial area 3
+                                            Dubai - UAE
+                                        </li>
+                                        <li><i class="bi bi-geo-alt"></i>
+                                            <span>MEAD HOPE FURNITURE MANUFACTURING LLC</span>
+                                            Warehouse No.2
+                                            Al Qusais Industrial area 4
+                                            Dubai - UAE
+                                        </li>
+                                        <li><i class="bi bi-envelope"></i>info@meadinteriors.com</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- <div class="col-lg-4 col-md-6">
+                            <div class="widget f-top-space recent-posts-entry">
+                                <h3 class="widget-title">Recent Post</h3>
+                                <div class="section-content">
+                                    <div class="widget-post-bx">
+                                        <div class="widget-post clearfix">
+                                            <div class="wt-post-media">
+                                                <img src="images/blog/recent-blog/pic1.jpg" alt="">
+                                            </div>
+                                            <div class="wt-post-info">
+                                                <div class="wt-post-meta">
+                                                    <ul>
+                                                        <li class="post-author">25 May</li>
+                                                        <li class="post-comment">05 Comment</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="wt-post-header">
+                                                    <a href="blog-single.html" class="post-title">Approved for
+                                                        restoration town hall.</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-post clearfix">
+                                            <div class="wt-post-media">
+                                                <img src="images/blog/recent-blog/pic2.jpg" alt="">
+                                            </div>
+                                            <div class="wt-post-info">
+                                                <div class="wt-post-meta">
+                                                    <ul>
+                                                        <li class="post-author">28 June</li>
+                                                        <li class="post-comment">05 Comment</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="wt-post-header">
+                                                    <a href="blog-single.html" class="post-title">Planning approved for
+                                                        restoration.</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-post clearfix">
+                                            <div class="wt-post-media">
+                                                <img src="images/blog/recent-blog/pic3.jpg" alt="">
+                                            </div>
+                                            <div class="wt-post-info">
+                                                <div class="wt-post-meta">
+                                                    <ul>
+                                                        <li class="post-author">28 June</li>
+                                                        <li class="post-comment">05 Comment</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="wt-post-header">
+                                                    <a href="blog-single.html" class="post-title">Crafting elegance with
+                                                        a modern twist.</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="widget f-top-space">
+                                    <h3 class="widget-title"> Locate Us</h3><br>
+                                    <div class="responsive-map">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28857.8201841703!2d55.37491540217954!3d25.296558725775512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43c7c1f4dc7f%3A0x498b988a3151ed4c!2sMEAD%20Interior%20Design%20LLC!5e0!3m2!1sen!2sin!4v1760689233548!5m2!1sen!2sin"
+                                            allowfullscreen="" loading="lazy"
+                                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- FOOTER COPYRIGHT -->
+
+                <div class="footer-bottom">
+                    <div class="container">
+                        <div class="container">
+                            <div class="footer-bottom-info d-flex justify-content-center">
+                                <div class="ftex">
+                                    <span class="copyrights-text">Copyright ©
+                                        <script>document.write(new Date().getFullYear());</script>| All Rights Reserved
+                                        by
+                                        <a href="#">MEAD Constructions</a> | Designed and Developed by <a
+                                            href="https://illforddigital.com/">Illford
+                                            Digital</a><br> <a href="#" title="">Privacy and
+                                            Policy</a> | <a href="#" title="">Terms and
+                                            Conditions</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </footer>
+            <!-- FOOTER END -->
+
+
+            <!-- BUTTON TOP START -->
+            <button class="scroltop"><span class="fa fa-angle-up  relative" id="btn-vibrate"></span></button>
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT  FILES ========================================= -->
+
+<style>
+    .custom-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.custom-modal-content {
+    background: #fff;
+    width: 90%;
+    max-width: 700px;
+    padding: 30px;
+    border-radius: 8px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.closeModal {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#modalDynamicContent h2{
+        font-size: 30px;    padding-bottom: 20px;
+}
+
+#modalDynamicContent .site-button{padding: 5px 25px;
+
+background-color: #ffffff;
+color: #f40404;
+border: 1px solid #f40404;
+}
+#modalDynamicContent .site-button:after{
+        top: -4px;
+}
+
+
+#modalDynamicContent h3{
+       /* font-size: 26px; */
+    /* font-weight: 600; */
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+#modalDynamicContent h3::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    /* background: #ed0900; */
+     border: 1px solid #ed0900; 
+    transform: rotate(45deg);
+    display: inline-block;
+}
+
+
+
+</style>
+
+    <div id="serviceModal" class="custom-modal">
+    <div class="custom-modal-content">
+        <span class="closeModal">&times;</span>
+        <div id="modalDynamicContent"></div>
+    </div>
+</div>
+
+
+
+    <script src="js/jquery-3.7.1.min.js"></script><!-- JQUERY.MIN JS -->
+    <script src="js/popper.min.js"></script><!-- POPPER.MIN JS -->
+    <script src="js/bootstrap.min.js"></script><!-- BOOTSTRAP.MIN JS -->
+    <script src="js/magnific-popup.min.js"></script><!-- MAGNIFIC-POPUP JS -->
+    <script src="js/waypoints.min.js"></script><!-- WAYPOINTS JS -->
+    <script src="js/counterup.min.js"></script><!-- COUNTERUP JS -->
+
+    <script src="js/isotope.pkgd.min.js"></script><!-- MASONRY  -->
+    <script src="js/imagesloaded.pkgd.min.js"></script><!-- MASONRY  -->
+    <script src="js/owl.carousel.min.js"></script><!-- OWL  SLIDER  -->
+    <script src="js/theia-sticky-sidebar.js"></script><!-- STICKY SIDEBAR  -->
+    <script src="js/jquery.bootstrap-touchspin.js"></script><!-- FORM JS -->
+
+    <script src="js/lc_lightbox.lite.js"></script><!-- IMAGE POPUP -->
+    <script src="js/bootstrap-slider.min.js"></script><!-- Form js -->
+    <script src="js/swiper-bundle.min.js"></script> <!-- Swiper JS -->
+    <script src="js/img-parallax.js"></script>
+    <script src="js/wow.min.js"></script><!-- WOW ANIMATION JS -->
+
+    <!-- Title animation Js -->
+    <script src="js/gsap.min.js"></script><!-- cursor -->
+    <script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+var swiper1 = new Swiper(".mySwiper1", {
+    loop: true,
+    navigation: {
+        nextEl: ".mySwiper1 .swiper-button-next",
+        prevEl: ".mySwiper1 .swiper-button-prev",
+    },
+});
+
+var swiper2 = new Swiper(".mySwiper2", {
+    loop: true,
+    navigation: {
+        nextEl: ".mySwiper2 .swiper-button-next",
+        prevEl: ".mySwiper2 .swiper-button-prev",
+    },
+});
+
+var swiper3 = new Swiper(".mySwiper3", {
+    loop: true,
+    navigation: {
+        nextEl: ".mySwiper3 .swiper-button-next",
+        prevEl: ".mySwiper3 .swiper-button-prev",
+    },
+});
+</script>
+
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function() {
+
+    const modal = document.getElementById("serviceModal");
+    const modalContent = document.getElementById("modalDynamicContent");
+    const buttons = document.querySelectorAll(".openPopup");
+    const closeBtn = document.querySelector(".closeModal");
+
+    buttons.forEach(button => {
+        button.addEventListener("click", function() {
+
+            const card = this.closest(".service-icon-box-two");
+            const hiddenContent = card.querySelector(".popup-content").innerHTML;
+
+            // Replace previous content
+            modalContent.innerHTML = hiddenContent;
+
+            // Show modal
+            modal.style.display = "flex";
+        });
+    });
+
+    closeBtn.addEventListener("click", function() {
+        modal.style.display = "none";
+        modalContent.innerHTML = ""; // optional clean reset
+    });
+
+    window.addEventListener("click", function(e){
+        if(e.target === modal){
+            modal.style.display = "none";
+            modalContent.innerHTML = "";
+        }
+    });
+
+});
+
+</script>
+
+</body>
+
+</html>
