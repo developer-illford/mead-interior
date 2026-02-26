@@ -14769,3 +14769,9 @@ select {
 .team-effect-hvr2 p.icon-links a:has(.bi-dribbble) {
   display: none;
 }
+
+@media (max-width: 991px) {
+    .twm-slider1-wrap .controls-area {
+        bottom: -12px;
+    }
+}
