@@ -238,7 +238,7 @@ hr {
 
 
 
-                                <li><a href="projects.php">Portfolio</a></li>
+                                <li><a href="project.html">Portfolio</a></li>
                                 <li><a href="career.html">Careers</a></li>
                                  
                                 <li><a href="contact.html">Contact</a></li>
