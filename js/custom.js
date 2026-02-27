@@ -877,40 +877,99 @@ function Cursor_section(){
 
 // Simple Project Filter (No Swiper)
 
-if (jQuery('.pro-filtr-cate-bx').length) {
 
-    const filters = document.querySelectorAll(".pro-filtr-cate-carousal span");
-    const items = document.querySelectorAll(".pro-filtr-cate-bx [data-filter]");
 
-    filters.forEach(function (filterBtn) {
+document.addEventListener("DOMContentLoaded", function () {
 
-        filterBtn.addEventListener("click", function () {
+    const level1Btns = document.querySelectorAll(".level-1 span");
+    const subFilterWrappers = document.querySelectorAll(".level-2 .sub-filter");
 
-            // Remove active class
-            filters.forEach(btn => btn.classList.remove("active"));
-            this.classList.add("active");
+    // Store original HTML of all items
+    const originalHTML = document.querySelector('.pro-filtr-cate-bx').innerHTML;
 
-            const filterValue = this.getAttribute("data-filter");
+    let lc_instance = null;
 
-            items.forEach(function (item) {
+    function rebuildContainer(filterValue) {
+        const container = document.querySelector('.pro-filtr-cate-bx');
 
-                if (filterValue === "all" || item.getAttribute("data-filter") === filterValue) {
-                    item.style.display = "block";
-                } else {
-                    item.style.display = "none";
-                }
+        // Reset container HTML
+        container.innerHTML = originalHTML;
 
-            });
+        const allItems = container.querySelectorAll('[data-filter]');
 
+        // Filter items
+        allItems.forEach(item => {
+            if (filterValue === "all") {
+                item.style.display = "block";
+            } else {
+                item.style.display = (item.getAttribute("data-filter") === filterValue) ? "block" : "none";
+            }
         });
 
+        // Destroy previous lightbox
+        if (lc_instance && typeof lc_instance.destroy === "function") {
+            lc_instance.destroy();
+        }
+
+        // Re-initialize lightbox only for visible images
+        lc_instance = lc_lightbox($('.pro-filtr-cate-bx [data-filter]:visible .elem'), {
+            wrap_class: 'lcl_fade_oc',
+            gallery: true,
+            thumb_attr: 'data-lcl-thumb',
+            skin: 'minimal',
+            radius: 0,
+            padding: 0,
+            border_w: 0,
+        });
+    }
+
+    function filterImages(filterValue) {
+        rebuildContainer(filterValue);
+    }
+
+    // Level 1 click
+    level1Btns.forEach(btn => {
+        btn.addEventListener("click", function () {
+            const cat = this.getAttribute("data-filter");
+
+            level1Btns.forEach(b => b.classList.remove("active"));
+            this.classList.add("active");
+
+            if (cat === "all") {
+                subFilterWrappers.forEach(wrapper => wrapper.style.display = "none");
+                filterImages("all");
+            } else {
+                subFilterWrappers.forEach(wrapper => {
+                    if (wrapper.classList.contains(cat)) {
+                        wrapper.style.display = "inline-block";
+                        wrapper.querySelectorAll("span").forEach(s => s.classList.remove("active"));
+                        const firstSub = wrapper.querySelector("span");
+                        firstSub.classList.add("active");
+                        filterImages(firstSub.getAttribute("data-filter"));
+                    } else {
+                        wrapper.style.display = "none";
+                    }
+                });
+            }
+        });
     });
 
+    // Level 2 click
+    const level2Btns = document.querySelectorAll(".level-2 span");
+    level2Btns.forEach(btn => {
+        btn.addEventListener("click", function () {
+            const parentWrapper = this.closest(".sub-filter");
+            parentWrapper.querySelectorAll("span").forEach(s => s.classList.remove("active"));
+            this.classList.add("active");
 
+            filterImages(this.getAttribute("data-filter"));
+        });
+    });
 
+    // Initial load
+    level1Btns[0].click();
+});
 
-
-}
 
 
 // > End projects Filter with Slider function by = swiper-bundle.min.js ========================== //
@@ -1058,7 +1117,7 @@ function progress_bar_width() {
 		// Category function by = owl.js **********//
 	    twm_category_carousal_2(),
 		 // > LIGHTBOX Gallery Popup function	by = lc_lightbox.lite.js =========================== //      
-		lightbox_popup(),
+		// lightbox_popup(),
 		// > magnificPopup for video function	by = magnific-popup.js
 		magnific_video(),
 		// > Vertically center Bootstrap modal popup function by = custom.js

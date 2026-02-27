@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="robots" content="">
+    <meta name="description" content="">
+
+    <!-- FAVICONS ICON -->
+    <!-- <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-v2.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32-v2.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+
+    <!-- PAGE TITLE HERE -->
+    <title>MEAD</title>
+
+    <!-- MOBILE SPECIFIC -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css"><!-- BOOTSTRAP STYLE SHEET -->
+    <link rel="stylesheet" href="css/font-awesome.min.css"><!-- FONTAWESOME STYLE SHEET -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css"><!-- OWL CAROUSEL STYLE SHEET -->
+    <link rel="stylesheet" href="css/magnific-popup.min.css"><!-- MAGNIFIC POPUP STYLE SHEET -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"><!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/style.css"><!-- MAIN STYLE SHEET -->
+    <link rel="stylesheet" href="css/bootstrap-icons.css"><!-- BOOTSTRAP ICON STYLE SHEET -->
+    <link rel="stylesheet" href="css/lc_lightbox.css"><!-- Lc light box popup -->
+    <link rel="stylesheet" href="css/bootstrap-slider.min.css"><!-- Price Range Slider -->
+<style>
+    .loading-area{
+    position: fixed;
+    inset: 0;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+/* remove absolute positioning */
+.loading-pic{
+    position: relative;
+}
+
+/* Spinner */
+.loader{
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #e10600;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+    0%{ transform: rotate(0deg); }
+    100%{ transform: rotate(360deg); }
+}
+</style>
+
+
+<style>
+    .filter-wrap .masonry-filter li.active a{
+            background-color: #ed0900;
+    }
+
+    .filter-wrap .masonry-filter li a:hover
+    {
+        background-color: #ed0900;
+    }
+    .project-new-2 .project-new-content{
+            border-right: 6px solid #ed0900c4;
+    }
+    .project-new-2 .project-new-content .wt-title a:hover {
+    color: #ed0900;
+}
+.filter-wrap .masonry-filter li.active a:hover {
+    background-color: #ed0900;
+}
+
+
+
+
+
+
+
+
+.pro-filtr-cate-carousal-wrap{
+    padding: 0 40px;
+}
+.project-filter-wrap.pro-filtr-cate-carousal span:hover{
+      background-color: #ed0900;
+}
+.effect-hvr3 .project-view-btn{
+    color: #ed0900;
+}
+
+
+
+.effect-hvr3 .effect-hvr3-inner .wt-title a {
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 768px) {
+.pro-filtr-cate-carousal-wrap{
+    padding: 0 20px;
+}
+
+.project-filter-wrap.pro-filtr-cate-carousal span{
+  
+    padding: 5px 12px;
+        margin-right: 0px;
+        margin-top: 10px;
+}
+
+.project-filter-wrap.pro-filtr-cate-carousal{
+    text-align: left !important;
+        margin: 0px 0 15px;
+}
+
+hr {
+    width: 100% !important;
+}
+
+}
+
+
+.effect-hvr3-inner h3{
+        font-size: 20px;
+}
+
+.project-filter-wrap.pro-filtr-cate-carousal span{
+        border: 1px solid #f4040566;
+    padding: 5px 12px;
+        margin-right: 5px;
+            margin-top: 10px;
+}
+
+
+
+</style>
+
+
+</head>
+
+<body>
+
+    <!-- LOADING AREA START ===== -->
+    <div class="loading-area">
+        <div class="loading-box"></div>
+        <div class="loading-pic">
+            <div class="loader"></div>
+        </div>
+    </div>
+    <!-- LOADING AREA  END ====== -->
+
+    <!-- Curser Pointer -->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <div class="page-wraper">
+
+        <!-- HEADER START -->
+        <header class="sticky-header site-header header-style-2 mobile-sider-drawer-menu">
+            <div class="main-bar-wraper  navbar-expand-lg">
+                <div class="main-bar">
+
+                    <div class="container-fluid clearfix">
+
+                        <div class="logo-header">
+                            <div class="logo-header-inner logo-header-one">
+                                <a href="index.html">
+                                    <img src="images/red-logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <ul class="company-site-info">
+                            <li><i class="bi bi-phone"></i><a href="tel:+97145704989" style="cursor: pointer;">+971 4
+                                    570 4989</a></li>
+                            <li><i class="bi bi-envelope"></i><a href="mailto:info@meadinteriors.com"
+                                    style="cursor: pointer;">info@meadinteriors.com</a></li>
+                        </ul>
+
+
+                        <!-- NAV Toggle Button -->
+                        <button id="mobile-side-drawer" data-target=".header-nav" data-toggle="collapse" type="button"
+                            class="navbar-toggler collapsed">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar icon-bar-first"></span>
+                            <span class="icon-bar icon-bar-two"></span>
+                            <span class="icon-bar icon-bar-three"></span>
+                        </button>
+
+                        <!-- MAIN Vav -->
+                        <div class="nav-animation header-nav navbar-collapse collapse d-flex justify-content-end">
+
+
+                            <ul class=" nav navbar-nav">
+                                <li><a href="index.html">Home</a></li>
+                               <li><a href="about.html">About</a></li>
+ 
+
+                                   <li class="has-child">
+                                    <a href="javascript:;">Services</a>
+                                    <ul class="sub-menu">
+
+                                        <li><a href="javascript:;">Interiors</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="interiors.html#residential-interior-design">Residential Interior Design</a></li>
+                                                <li><a href="interiors.html#commercial-interior-fit-outs">Commercial Interior Fit-Outs</a></li>
+                                                  <li><a href="interiors.html#modular-kitchen-solutions">Modular Kitchen Solutions</a></li>
+                                                    <li><a href="interiors.html#bedroom-and-wardrobe-design">Bedroom & Wardrobe Design</a></li>
+                                                      <li><a href="interiors.html#false-ceiling-and-lighting-design">False Ceiling & Lighting Design</a></li>
+                                                        <li><a href="interiors.html#renovation-and-remodeling-services">Renovation & Remodeling Services</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li><a href="javascript:;">Constructions</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="constructions.html#residential-construction">Residential Construction</a></li>
+                                                <li><a href="constructions.html#commercial-construction">Commercial Construction</a></li>
+                                                   <li><a href="constructions.html#turnkey-construction-projects">Turnkey Construction Projects</a></li>
+                                                      <li><a href="constructions.html#structural-and-civil-works">Structural & Civil Works</a></li>
+                                                         <li><a href="constructions.html#renovation-and-extension-projects">Renovation & Extension Projects</a></li>
+                                                             <li><a href="constructions.html#project-management-and-consulting">Project Management & Consulting</a></li>
+                                            </ul>
+                                        </li>                                              
+                                    </ul>                                
+                                </li>
+
+
+
+                                <li><a href="projects.php">Portfolio</a></li>
+                                <li><a href="career.html">Careers</a></li>
+                                 
+                                <li><a href="contact.html">Contact</a></li>
+
+                                </ul>
+                           
+                       </div>
+
+
+
+                                <!-- SITE Search -->
+                                <div id="search">
+                                    <span class="close-btn">X</span>
+                                    <form role="search" id="searchform" action="/search" method="get" class="radius-xl">
+                                        <div class="input-group">
+                                            <input class="form-control" value="" name="q" type="search"
+                                                placeholder="Search...">
+                                            <span class="input-group-append">
+                                                <button type="button" class="search-btn">
+                                                    <i class="bi bi-search"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+
+                        </div>
+
+                    </div>
+                </div>
+              
+        </header>
+        <!-- HEADER END -->
+
+
+        <!-- CONTENT START -->
+        <div class="page-content">
+
+            <!-- INNER PAGE BANNER -->
+            <div class="wt-bnr-inr overlay-wraper bg-center">
+                <div class="overlay-main innr-bnr-olay"></div>
+                <div class="wt-bnr-inr-entry">
+                    <div class="banner-title-outer">
+                        <div class="banner-title-name">
+                            <h2 class="wt-title">Portfolio</h2>
+                        </div>
+                        <!-- BREADCRUMB ROW -->
+                        <div>
+                            <ul class="wt-breadcrumb breadcrumb-style-2">
+                                <li><a href="index.html">Home</a></li>
+                                <li>Portfolio</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <!-- BREADCRUMB ROW END -->
+                </div>
+            </div>
+          
+
+
+            <div class="section-full p-t120 p-b90 pro-filtr-cate-wrap">
+    <div class="container">
+        <!-- TITLE START-->
+        <div class="section-head center wt-small-separator-outer">
+            <div class="wt-small-separator site-text-primary">
+                <i class="bi bi-house"></i>
+                <div>Crafted to Perfection</div>
+            </div>
+            <h2 class="wt-title title_split_anim">Our Finished Projects</h2>
+        </div>
+        <!-- TITLE END-->
+    </div>
+
+
+
+<style>
+    hr {
+margin: 16px 0;
+    color: #f404048c;
+    width: 43%;
+    margin-top: 28px;
+    }
+
+.project-filter-wrap.pro-filtr-cate-carousal {
+    list-style: none;
+    margin: 0px 0 0px;
+}
+
+.pro-filtr-cate-bx {
+    padding-top: 50px;
+}
+
+
+.effect-sarah img{
+	    height: 250px;
+		object-fit: cover;
+}
+
+.effect-hvr3 .effect-hvr3-inner {
+    padding: 10px;    height: 40px;
+}
+
+.effect-hvr3-inner h3 {
+    font-size: 17px;
+}
+</style>
+
+
+
+
+
+
+
+
+<?php
+
+// -------- FORMAT FUNCTION --------
+function formatName($text) {
+    $text = str_replace(['-', '_'], ' ', $text);
+    $text = strtolower($text);
+    return ucwords($text);
+}
+
+$baseDir = "images/portfolio/";
+$categories = array_filter(glob($baseDir . '*'), 'is_dir');
+?>
+
+<div class="pro-filtr-cate-carousal-wrap">
+
+<!-- ================= LEVEL 1 CATEGORY ================= -->
+<div class="project-filter-wrap pro-filtr-cate-carousal text-center level-1">
+    <span data-filter="all" class="active">All</span>
+
+    <?php
+    $catIndex = 1;
+    foreach ($categories as $category):
+        $catName = basename($category);
+        $catClass = "cat" . $catIndex;
+    ?>
+        <span data-filter="<?= $catClass; ?>">
+            <?= formatName($catName); ?>
+        </span>
+    <?php
+        $catIndex++;
+    endforeach;
+    ?>
+
+    <div align="center"><hr/></div>
+</div>
+
+
+<!-- ================= LEVEL 2 SUBCATEGORY ================= -->
+<div class="project-filter-wrap pro-filtr-cate-carousal text-center level-2">
+
+<?php
+$catIndex = 1;
+$filterIndex = 1;
+
+foreach ($categories as $category):
+
+    $subFolders = array_filter(glob($category . '/*'), 'is_dir');
+    $catClass = "cat" . $catIndex;
+?>
+
+    <div class="sub-filter <?= $catClass; ?>" style="display:none;">
+
+        <?php foreach ($subFolders as $sub):
+            $subName = basename($sub);
+            $filterClass = "filter" . $filterIndex;
+        ?>
+            <span data-filter="<?= $filterClass; ?>">
+                <?= formatName($subName); ?>
+            </span>
+        <?php
+            $filterIndex++;
+        endforeach;
+        ?>
+
+    </div>
+
+<?php
+$catIndex++;
+endforeach;
+?>
+
+</div>
+
+
+<!-- ================= IMAGES SECTION ================= -->
+<div class="pro-filtr-cate-bx">
+    <div class="row">
+
+<?php
+$filterIndex = 1;
+
+foreach ($categories as $category):
+
+    $subFolders = array_filter(glob($category . '/*'), 'is_dir');
+
+    foreach ($subFolders as $sub):
+
+        $images = glob($sub . '/*.{jpg,jpeg,png,gif,webp,JPG,JPEG,PNG,WEBP}', GLOB_BRACE);
+        $filterClass = "filter" . $filterIndex;
+
+        foreach ($images as $image):
+
+            $imageName = pathinfo($image, PATHINFO_FILENAME);
+            $formattedImageName = formatName($imageName);
+?>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 project-item" data-filter="<?= $filterClass; ?>">
+            <div class="effect-hvr3">
+                <div class="effect-sarah">
+                    <img src="<?= $image; ?>" alt="<?= $formattedImageName; ?>">
+                    <a class="elem pic-long project-view-btn"
+                       href="<?= $image; ?>"
+                       title="<?= $formattedImageName; ?>"
+                       data-lcl-thumb="<?= $image; ?>">
+                        <i class="fa fa-search-plus"></i>
+                    </a>
+                </div>
+                <div class="effect-hvr3-inner">
+                    <h3 class="wt-title text-white">
+                        <?= $formattedImageName; ?>
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+<?php
+        endforeach;
+
+        $filterIndex++;
+    endforeach;
+
+endforeach;
+?>
+
+    </div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+            <!-- CLIENT LOGO SECTION START -->
+            <div class="section-full  Client-logo-style1-wrap">
+                <div class="section-content">
+                    <div class="home-client-carousel2-wrap">
+                        <!-- Swiper -->
+                        <div class="swiper home-client-carousel2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="ow-client-logo">
+                                        <div class="client-logo client-logo-media">
+                                        <a href="about-2.html"><img src="images/client-logo/dark/1.png" alt=""></a></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="ow-client-logo">
+                                        <div class="client-logo client-logo-media">
+                                        <a href="about-2.html"><img src="images/client-logo/dark/2.png" alt=""></a></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="ow-client-logo">
+                                        <div class="client-logo client-logo-media">
+                                        <a href="about-2.html"><img src="images/client-logo/dark/3.png" alt=""></a></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="ow-client-logo">
+                                        <div class="client-logo client-logo-media">
+                                        <a href="about-2.html"><img src="images/client-logo/dark/4.png" alt=""></a></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="ow-client-logo">
+                                        <div class="client-logo client-logo-media">
+                                        <a href="about-2.html"><img src="images/client-logo/dark/5.png" alt=""></a></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="ow-client-logo">
+                                        <div class="client-logo client-logo-media">
+                                        <a href="about-2.html"><img src="images/client-logo/dark/1.png" alt=""></a></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="ow-client-logo">
+                                        <div class="client-logo client-logo-media">
+                                        <a href="about-2.html"><img src="images/client-logo/dark/3.png" alt=""></a></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="ow-client-logo">
+                                        <div class="client-logo client-logo-media">
+                                        <a href="about-2.html"><img src="images/client-logo/dark/1.png" alt=""></a></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="ow-client-logo">
+                                        <div class="client-logo client-logo-media">
+                                        <a href="about-2.html"><img src="images/client-logo/dark/2.png" alt=""></a></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="ow-client-logo">
+                                        <div class="client-logo client-logo-media">
+                                        <a href="about-2.html"><img src="images/client-logo/dark/3.png" alt=""></a></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="ow-client-logo">
+                                        <div class="client-logo client-logo-media">
+                                        <a href="about-2.html"><img src="images/client-logo/dark/4.png" alt=""></a></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="ow-client-logo">
+                                        <div class="client-logo client-logo-media">
+                                        <a href="about-2.html"><img src="images/client-logo/dark/5.png" alt=""></a></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="ow-client-logo">
+                                        <div class="client-logo client-logo-media">
+                                        <a href="about-2.html"><img src="images/client-logo/dark/1.png" alt=""></a></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="ow-client-logo">
+                                        <div class="client-logo client-logo-media">
+                                        <a href="about-2.html"><img src="images/client-logo/dark/3.png" alt=""></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CLIENT LOGO  SECTION End --> 
+
+            <!-- LATEST PROJECTS SLIDER START -->
+           
+            <!-- LATEST PROJECTS SLIDER END --> 
+    
+        </div>
+        <!-- CONTENT END -->
+
+       <!-- CONTENT END -->
+
+            <!-- FOOTER START -->
+            <footer class="site-footer footer-dark">
+
+                <!-- FOOTER BLOCKES START -->
+                <div class="footer-top">
+
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-lg-4 col-md-12">
+
+                                <div class="widget widget_about">
+                                    <div class="logo-footer clearfix">
+                                        <a href="index.html"><img src="images/logo-white.png" alt=""></a>
+                                    </div>
+                                    <div class="call-us">
+                                        <a href="tel:+97145704989">+971 4 570 4989</a>
+                                    </div>
+                                    <p>MEAD is a leading EPC and interior design firm, specializing in RCC, Pre-Engineered Buildings, and Custom Interior Solutions.
+                                    </p>
+                                    <ul class="social-icons">
+                                        <li><a href="https://www.x.com"><i
+                                                    class="bi bi-twitter-x cursor-scale small"></i></a></li>
+                                        <li><a href="https://www.facebook.com "><i
+                                                    class="bi bi-facebook cursor-scale small"></i></a></li>
+                                        <li><a href="https://www.instagram.com"><i
+                                                    class="bi bi-instagram cursor-scale small"></i></a></li>
+                                        
+                                    </ul>
+
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="widget f-top-space">
+                                    <h3 class="widget-title">Address</h3>
+                                    <ul class="widget_address">
+                                        <li><i class="bi bi-geo-alt"></i>
+                                            <span> MEAD TO EXECUTE WORKS FOR INTERIOR DESIGN LLC</span>
+                                            Warehouse No.1
+                                            Al Qusais Industrial area 3
+                                            Dubai - UAE
+                                        </li>
+                                        <li><i class="bi bi-geo-alt"></i>
+                                            <span>MEAD HOPE FURNITURE MANUFACTURING LLC</span>
+                                            Warehouse No.2
+                                            Al Qusais Industrial area 4
+                                            Dubai - UAE
+                                        </li>
+                                        <li><i class="bi bi-envelope"></i>info@meadinteriors.com</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                          
+
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="widget f-top-space">
+                                    <h3 class="widget-title"> Locate Us</h3><br>
+                                    <div class="responsive-map">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28857.8201841703!2d55.37491540217954!3d25.296558725775512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43c7c1f4dc7f%3A0x498b988a3151ed4c!2sMEAD%20Interior%20Design%20LLC!5e0!3m2!1sen!2sin!4v1760689233548!5m2!1sen!2sin"
+                                            allowfullscreen="" loading="lazy"
+                                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- FOOTER COPYRIGHT -->
+
+                <div class="footer-bottom">
+                    <div class="container">
+                        <div class="container">
+                            <div class="footer-bottom-info d-flex justify-content-center">
+                                <div class="ftex">
+                                    <span class="copyrights-text">Copyright ©
+                                        <script>document.write(new Date().getFullYear());</script>| All Rights Reserved
+                                        by
+                                        <a href="#">MEAD Constructions</a> | Designed and Developed by <a
+                                            href="https://illforddigital.com/">Illford
+                                            Digital</a><br> <a href="#" title="">Privacy and
+                                            Policy</a> | <a href="#" title="">Terms and
+                                            Conditions</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </footer>
+            <!-- FOOTER END -->
+
+
+            <!-- BUTTON TOP START -->
+            <button class="scroltop"><span class="fa fa-angle-up  relative" id="btn-vibrate"></span></button>
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT  FILES ========================================= -->
+    <script src="js/jquery-3.7.1.min.js"></script><!-- JQUERY.MIN JS -->
+    <script src="js/popper.min.js"></script><!-- POPPER.MIN JS -->
+    <script src="js/bootstrap.min.js"></script><!-- BOOTSTRAP.MIN JS -->
+    <script src="js/magnific-popup.min.js"></script><!-- MAGNIFIC-POPUP JS -->
+    <script src="js/waypoints.min.js"></script><!-- WAYPOINTS JS -->
+    <script src="js/counterup.min.js"></script><!-- COUNTERUP JS -->
+
+    <script src="js/isotope.pkgd.min.js"></script><!-- MASONRY  -->
+    <script src="js/imagesloaded.pkgd.min.js"></script><!-- MASONRY  -->
+    <script src="js/owl.carousel.min.js"></script><!-- OWL  SLIDER  -->
+    <script src="js/theia-sticky-sidebar.js"></script><!-- STICKY SIDEBAR  -->
+    <script src="js/jquery.bootstrap-touchspin.js"></script><!-- FORM JS -->
+
+    <script src="js/lc_lightbox.lite.js"></script><!-- IMAGE POPUP -->
+    <script src="js/bootstrap-slider.min.js"></script><!-- Form js -->
+    <script src="js/swiper-bundle.min.js"></script> <!-- Swiper JS -->
+    <script src="js/img-parallax.js"></script>
+    <script src="js/wow.min.js"></script><!-- WOW ANIMATION JS -->
+
+    <!-- Title animation Js -->
+    <script src="js/gsap.min.js"></script><!-- cursor -->
+    <script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
+
+</body>
+
+</html>
